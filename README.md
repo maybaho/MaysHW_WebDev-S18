@@ -1,3 +1,3 @@
 # MaysHW_WebDev-S18
-sfnjdnfjnf
-fknkfdf
+
+Welcome to my homework folder :-) 
