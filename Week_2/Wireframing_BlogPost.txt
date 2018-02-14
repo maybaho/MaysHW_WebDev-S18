@@ -1,0 +1,15 @@
+
+Reaction to Wireframing Article
+
+--------------------------------
+
+The article "Five Important Considerations for Wireframing" describes the significance of wireframing for web developers and outlines key factors to which one should pay attention before jumping into the code. These considerations include: 
+	1 - Determining the problem
+	2 - Making workflows/sketches
+	3 - Receiving feedback 
+	4 - Being aware of technical resources  
+	5 - Designing for intended/potential audience 
+
+These considerations are key aspects any web developer, designer, or product manager should be aware of and contemplate before delving right into the building the project. And this is applicable to any kind of project development - to conceptualize and target a specific issue and specific group of users narrows the focus and maximizes the project's success. 
+
+I also beleive wireframing is essential to producing an aesthetically pleasing and user-friendly website. In sketching out layouts and taking note of the physical resources available, the designer/developer is able to more easily envision the entire website in its totality and imagine the audiovisual experience of the user. This will determine their interest in the website and will affect their mode of engagment, the duration of their stay, and potential publicity for the website. Testing and prototyping are also essential in UX design - though out of the scope of wireframing, it is an important next step in the process. 
