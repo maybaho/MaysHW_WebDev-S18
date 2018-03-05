@@ -1,0 +1,3 @@
+This is the same recipe website from last week, with some semantic mark up in HTML. The layout of the main recipe page is designed similar to the wire frame. The web page contains links to other pages - like "about" and "contact". All the pages are in the same folder and link through redirecting to the other files. 
+
+For this assignment, I used divs, classes, sidebars, and hyperlinks. I also used minimal CSS for the design, mostly for colors and fonts. 
