@@ -1,0 +1,1 @@
+Using the HTML markup from last week, I built up the web page using CSS. I played around with fonts, colors, padding, margins, div layout/spacing, borders, and positioning. I'm using an internal style sheet for all of it. 
