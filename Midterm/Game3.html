@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+
+  <title>Click</title>
+
+  <style type="text/css">
+
+  body {
+    background-image: url(background.jpg);
+    background-size: cover;
+  }
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #8c8c8c;
+    border-top: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+    border-bottom:  2px solid #999999;
+    border-right:  2px solid #999999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33px;
+
+  }
+
+  li {
+    float: left;
+    margin: 2px;
+    padding: 5px 10px 5px 10px; 
+    
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "LCD Solid";
+
+    border-left: 1px white solid;
+    border-top: 1px white solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+
+
+  }
+
+  li a {
+    display: block;
+    color: black;
+    background-color: none;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  p{
+    font-size: 30px;
+    font-family: "LCD Solid"; 
+    color: white;
+    margin: auto; 
+    text-align: center;
+    padding-top: 20%;
+    background: none;
+  }
+
+  .active {
+    background-color: #a6a6a6;
+    color: white;
+    border-left: 1px black solid;
+    border-top: 1px black solid;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+  }
+
+  button {
+    background-color: #8c8c8c; 
+    border: none;
+    font-size: 18px;
+    font-family: "LCD Solid";
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    padding: 10px;
+
+    margin-left: 45%;
+    margin-top: 10%;
+
+    border-left: 1px white solid;
+    border-top: 1px white solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:active {
+    cursor: pointer;
+    background-color: #130eaf;
+
+    border-left: 1px black solid;
+    border-top: 1px black solid;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+  }
+
+    </style>
+
+  </head>
+
+  <body>
+
+   <ul>
+    <li><a href="home.html">Pointless Games</a></li>
+    <li><a href="Game1.html">Game 1</a></li>
+    <li><a href="Game2.html">Game 2</a></li>
+    <li class="active"><a href="Game3.html">Game 3</a></li>
+    <li><a href="Game4.html">Game 4</a></li>
+  </ul>
+
+  <button type="button" onClick="onClick()">Click me</button>
+
+ 
+ <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        if (clicks == 20) {
+          alert(" ---->.   'The end is in the beginning'     - Samuel Beckett   .<---");
+          clicks = 0;
+        }
+        document.getElementById("clicks").innerHTML = clicks;
+    }
+  </script>
+
+
+
+  <p>Clicks: <a id="clicks">0</a></p>
+
+
+</body>
+
+
+</html>
+
+
+
