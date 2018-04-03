@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Tip Calculator</title>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			document.getElementById('tipButn').addEventListener('click', calcTip); 
+		});
+
+		function calcTip () {
+			var output = document.getElementById('output');
+
+			var b - document.getElementById('bill').value;
+			console.log(b, typeof(b)); 
+			b = parseFloat(); //parseFloat means pull the float out of the string (because function retured the number as string)
+			console.log(b, typeof(b)); 
+
+			//find the selected tip increment 
+			var arrTip = document.getElementByName('tip'); 
+			var p; 
+
+			for (var i=0; i<arrTips.length; i++){
+				if (arrTip[i].checked) {
+					p = arrTip[i].value; 
+					p= parseFloat(p); 
+					break; 
+				}
+			}
+
+			var tip = b*p; 
+			console.log(tip);
+
+			output.innerHTML = "Your tip is: $" + moneyRound(tip); 
+		}
+
+		function moneyRound(num) {
+			return Math.ceil(num*100) / 100;
+		}
+
+
+	</script>
+
+</head>
+<body> 
+	<label for="">Bill: </label> 
+	<input type = "number" name="bill" id="bill" step="0.01">
+
+	<p>Tip Percentage</p>
+	<label>5% </label><input type = "radio" name="tip" value="0.05">
+	<label>10% </label><input type = "radio" name="tip" value="0.1">
+	<label>15% </label><input type = "radio" name="tip" value="0.15">
+	<label>20% </label><input type = "radio" name="tip" value="0.2">
+
+	<button type ="submit" id ="tipBtn">Calculate Tip</button>
+	<div = id="output"></div>
+
+</body>
+
+</body>
+</html>
