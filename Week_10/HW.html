@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<title>HW WEEK 10</title>
+
+<body>
+
+	<input type="button" id="btnSearch" value="CLICK & GUESS THE LANGAUGE" onclick="GetValue();"/>
+	<p id="message" ></p>
+
+<script>
+function GetValue()
+{
+    var myarray= new Array("Hello", "Bonjour", "Hola", "Guten Tag", "Cio", "Ola", "Namaste", "Salaam", "Konnichiwa", "Zdras-Tvuy-Te", "Merhaba", "Sain Bainuu", "Szia", "Jambo", "Ni Hau", "Privieet", "Halo");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+    //alert(random);
+    document.getElementById("message").innerHTML=random;
+}
+</script>
+
+</body>
+</html>
