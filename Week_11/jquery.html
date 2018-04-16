@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jquery Selector</title>
+
+    </head>
+  <body>
+    <div id= "myID"> This is a dive we will grad with a jquery id selector</div>
+
+    <p class="goat">paragraph</p>
+    <p class="goat">paragraph</p>
+    <p class="goat">paragraph</p>
+    <p class="goat">paragraph</p>
+
+    <UL>
+      <li class="goat">item 1</li>
+      <li>item 2</li>
+      <li> item 3</li>
+    </UL>
+
+    <!--always load jquery before you start wiriting or using jquery syntax--> 
+    <script
+      src="https://code.jquery.com/jquery-3.3.3.min.js" 
+      integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" 
+      crossorigin="anaymous"></script>anaymous
+
+    <!--our own jquery examples--> 
+    <script type="text/jacvscript""> 
+      //the old vanilla js way of waiting for a page to load
+      //document.addEventListener('DOMContentLoaded', function() {
+      // anaymous funtion 
+          console.log('long hand way') 
+    });
+
+    document.addEventListener('DOMContentLoaded', init); 
+    // functino init() {
+    //stuff to do on load
+  }
+    
+    //onLoad the Jquery way
+    $(document).ready(funtion()) {
+    console.log('waiting for page to load jq way');
+    //add event listeners the old school way 
+    document.getElementById('myID').addEventListener('click', function() {
+    // do stuff here on click 
+
+  }); 
+
+  $('#myID').click(function()) {
+  
+}
+  }
+
+  </body>
+</html>
