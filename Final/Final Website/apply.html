@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Misc.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.js"></script>
+
+  <style type="text/css">
+      
+
+      .btn {
+        color: #fff;
+        background-color: rgb(200, 60, 40);
+        position: relative;
+        }
+
+      .btn:hover {
+        color: #fff;
+        background-color: rgb(180, 60, 40);
+        border-color: black;
+      }
+
+      .btn:active {
+        color: #fff;
+        background-color: rgb(0, 0, 0);
+      }
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+      .navbar {
+        background-color: rgb(0, 0, 0, 0.5);
+      }
+
+      .navbar-item{
+        color: white;
+      }
+
+      .dropdown-menu{
+        background-color: rgb(255, 255, 255, 0.5);
+      }
+
+      .dropdown-link1{
+        color: #000000;
+        padding: 5%;
+
+      }
+
+
+      .dropdown-link1:hover {
+        text-decoration: none;
+        color: #595959;
+
+      }
+
+      .sorry-app {
+        margin: auto;
+        padding-top: 25%;
+      }
+
+      img{
+        position: absolute;
+        right: 0px;
+      }
+
+      body {
+
+      font-family: "Ciao.ttf";
+      color: white;
+
+      background-color: black;
+
+      }
+
+      h1{ 
+        color: rgb(200, 60, 40);
+        padding-top: 10px;
+        text-align: center;
+
+        }
+        
+        p{
+          text-align: center;
+          color: #a6a6a6 ;     
+
+        }
+
+        form{
+          max-width: 70%;
+          margin: auto;  
+          padding-bottom: 20px;    
+        }
+
+        label, .file {
+          color: #a6a6a6;      
+        }
+
+  </style>
+
+  <script>
+
+
+    $(document).ready(function(){
+    $("#mybutton").click(function(){
+        $("#apply").slideUp(1000);
+        $("#myform").slideUp(1000, function(){
+             $("#sorry").fadeIn();
+           });
+
+        console.log("WORKS");
+      }) }); 
+  
+
+
+  </script>
+
+
+  </head>
+
+  
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">YALLALALALA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About</a>
+            </li>
+
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret sr-only">(current)</span></a>
+               <ul class="dropdown-menu">
+                  <li><a class="nav-item dropdown-link1" href="flavia.html">Flavia</a></li>
+                  <li><a class="nav-item dropdown-link1" href="valentin.html">Valentin</a></li>
+                  <li><a class="nav-item dropdown-link1 " href="hayden.html">Hayden</a></li>
+                  <li><a class="nav-item dropdown-link1" href="keith.html">Keith</a></li>
+                  <li><a class="nav-item dropdown-link1" href="liam.html">Liam</a></li>
+                </ul>
+
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a class="nav-item dropdown-link1" href="initiation.html">Initiation Ceremony</a></li>
+                  <li><a class="nav-item dropdown-link1" href="deserttrip.html">Desert Trip</a></li>
+                  <li><a class="nav-item dropdown-link1" href="halloween.html">Brooklyn 22</a></li>
+                </ul>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="misc.html">Misc</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="apply.html">Apply</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+      <div class="container">
+
+        <div id="apply">
+          <h1 class="mt-5"><i>Apply Now!</i></h1>
+          <p>Apply to be a part of YALLALALALA and maybe you can get your own initiation trial!</p>
+        </div>
+
+        <div id="sorry" class="sorry-app" style="display:none">
+          <h1 class="mt-5"><i>Sorry!</i></h1>
+          <p>Sorry, due to this month's large pool of applicants, we have stopped accepting submissions at this time. You may submit another application in 90 days. Until then, please do not try to contact us by phone or email. </p>
+        </div>
+
+
+        <div id="myform">
+          
+          <form>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">What is your real name?</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Boring Full Name">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Please suggest a nickname for yourself <i><small>(Please note that there are no guarantees you will be given this nickname)</i></small></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Who is your favorite YALLALALALA member?</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>All of them</option>
+              <option>Overstimulated</option>
+              <option>VALLALALALA</option>
+              <option>Free Holes</option>
+              <option>Minimal Brain Disfunction</option>
+              <option>Lollipop</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Why do you want to join YALLALALA? <br> <small> Please explain what you hope to gain from and how you will contribute to the group. <i>(750-1000 words)</i> </small></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Please list 3 references <i><small>(include Snapchat name and Twitter handle).</i></small></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Please attach a comprehensive list of relevant experience</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          <div class="btn btn-primary" id="mybutton">Submit</div>
+
+          </form>  
+
+          </div>  
+
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
